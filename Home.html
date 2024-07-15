@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="css/Home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inder&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awsoma cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+        <a class="navbar-brand" href="#">
+            <img src="/images/navbar_weather.png" alt="">
+            Wethercoach
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ClimateChange.html">Climate Change</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="News.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Map.html">Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+        </div>
+        
+    </nav>
+    <div class="container-fluid" style="padding: 0px; margin: 0px;">
+        <div class="row row-1">
+            <div class="col-md-4" id="bycycle-text">
+                <p class="weather_tital">weather forecast for everyone</p>
+                <p id="forecast">The Forecast For Today Is Sunny And Bright, With A High Of 68
+                    Degrees. Enjoy The Beautiful Weather And Make Sure To Wear
+                    Sunscreen.</p>
+                <button class="notification">Get Notification</button>
+            </div>
+            <div class="col-md-5" id="bycycle">
+                <div class="bycycle-r"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-2 justify-content-center">
+            <div class="col-md-6 bg-images justify-conten t-center d-flex">
+                <div class="card card_bg_1" style="width: 20rem;height: 260px;">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="card-body" style="padding-top: 30px;padding-right: 30px;">
+                                <h5 class="card-title">Cape Town</h5>
+                                <h5 class="card-title">13.32℃</h5>
+                                <p>Tuesday</p>
+                            </div>
+                            <div class="card-body">
+                                <img src="/images/partly.png" alt width="90px" height="84px">
+                                <p>Partly Cloudy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-center gap-4">
+                        <div class="d-flex gap-1">
+                            <img src="/images/rain.png" alt height="20px" width="20px">
+                            <p>66%</p>
+                        </div>
+                        <div class="d-flex gap-1">
+                            <img src="/images/rain.png" alt height="20px" width="20px">
+                            <p>14%</p>
+                        </div>
+                        <div class="d-flex gap-1">
+                            <img src="/images/rain.png" alt height="20px" width="20px">
+                            <p>66%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card_bg_2" style="width: 20rem;height: 260px;">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="card-body" style="padding-top: 30px;padding-right: 30px;">
+                                <h5 class="card-title">Cape Town</h5>
+                                <h5 class="card-title">13.32℃</h5>
+                                <p>Tuesday</p>
+                            </div>
+                            <div class="card-body">
+                                <img src="/images/partly.png" alt width="90px" height="84px">
+                                <p>Partly Cloudy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-center gap-4">
+                        <div class="d-flex gap-1">
+                            <img src="/images/rain.png" alt height="20px" width="20px">
+                            <p>66%</p>
+                        </div>
+                        <div class="d-flex gap-1">
+                            <img src="/images/rain.png" alt height="20px" width="20px">
+                            <p>14%</p>
+                        </div>
+                        <div class="d-flex gap-1">
+                            <img src="/images/rain.png" alt height="20px" width="20px">
+                            <p>66%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 only-text">
+
+                <p class="pocket_weather">
+                  weather in your pocket
+                  <br>
+                  <span style="color: #1E64F0;">Directly From Your Phone</span>
+                </p>
+                <p class="forecast">
+                    The Forecast For Today Is Sunny And Bright, With A High Of 68
+                    Degrees. Enjoy The Beautiful Weather And Make Sure To Wear
+                    Sunscreen. The Forecast For Today Is Sunny And Bright, With A
+                    High Of 68 Degrees. Enjoy The Beautiful Weather And Make
+                    Sure To Wear Sunscreen.
+                </p>
+                <p class="forecast">
+                    The Forecast For Today Is Sunny And Bright, With A High Of 68
+                    Degrees. Enjoy The Beautiful Weather And Make Sure To Wear
+                    Sunscreen.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-card">
+        <div class="col-md-6">
+
+            <div class="franciscos">
+                <p class="san">san francisco</p>
+            </div>
+            <div class="francisco">
+                <p>Monday,May 23 Update As Of 2:45 PM</p>
+            </div>
+            <div class="rain-card">
+                <div class="card rounded-5">
+                    <div class="card-body d-flex gap-2">
+                        <div class="d-flex gap-3">
+                            <img src="/images/varsad.png" alt>
+                            <p class="wind">Wind 3KM/H</p>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <img src="/images/varsad (1).png" alt>
+                            <p class="wind">Wind 3KM/H</p>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex gap-2">
+                        <div class="card-body d-flex gap-2">
+                            <div class="d-flex gap-3">
+                                <img src="/images/suraj.png" alt>
+                                <p class="wind">Wind 3KM/H</p>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <img src="/images/suraj.png" alt>
+                                <p class="wind">Wind 3KM/H</p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6 box-center">
+            <div class="card wether-card">
+                <div class="card-body">
+                    <div>
+                        <img src="images/wethercard.png" alt style="margin: 0 auto;display: block;">
+                        <h1 class="text-center">23℃</h1>
+                        <br>
+                        <h2 class="text-center">23℃-31℃</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container weekly">
+        <div class="d-flex gap-4">
+            <p class="Week">Today</p>
+            <p class="Week">Weekly</p>
+        </div>
+    </div>
+    <div class="container we-card">
+        <div class="row  g-4">
+             <div class="col-md-6 col-lg-3 col-12">
+                <div class="card h-110 pt-26 hover_card_1" id="cardss">
+                    <img src="/images/card1.svg" width="111px" height="99px" style="margin: 0 auto;margin-top: 15px;">
+                    <div class="card-body d-flex gap-4 justify-content-center">
+                        <p class="bg-gs">Sun</p>
+                        <p class="bg-gs">5:00PM</p>
+                    </div>
+                    <div class="d-flex gap-4 justify-content-center">
+                        <p class="tetxs">20℃</p>
+                        <p class="c-25">25℃</p>
+                    </div>
+                    <div class="d-flex m-2">
+                        <div class="gap-3 d-flex m-auto">
+                            <img src="/images/varsad.png" width="19px" height="17px">
+                            <p>45Km/h</p>
+                            <img src="/images/varsad (1).png" width="19px" height="17px">
+                            <p>70%</p>
+                        </div>
+                    </div>
+                    <p class="m-auto cloudy">Cloudy</p>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-3 col-12">
+                <div class="card h-110 pt-26 hover_card_1" id="cardss">
+                    <img src="/images/card2.svg" width="111px" height="99px" style="margin: 0 auto;margin-top: 15px;">
+                    <div class="card-body d-flex gap-4 justify-content-center">
+                        <p class="bg-gs">Mon</p>
+                        <p class="bg-gs">6:00PM</p>
+                    </div>
+                    <div class="d-flex gap-4 justify-content-center">
+                        <p class="tetxs">20℃</p>
+                        <p class="c-25">25℃</p>
+                    </div>
+                    <div class="d-flex m-2">
+                        <div class="gap-3 d-flex m-auto">
+                            <img src="/images/varsad.png" width="19px" height="17px">
+                            <p>45Km/h</p>
+                            <img src="/images/varsad (1).png" width="19px" height="17px">
+                            <p>70%</p>
+                        </div>
+                    </div>
+                    <p class="m-auto cloudy">Cloudy</p>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-3 col-12">
+                <div class="card h-110 pt-26 hover_card_1" id="cardss">
+                    <img src="/images/card3.svg" width="111px" height="99px" style="margin: 0 auto;margin-top: 15px;">
+                    <div class="card-body d-flex gap-4 justify-content-center">
+                        <p class="bg-gs">Tue</p>
+                        <p class="bg-gs">7:00PM</p>
+                    </div>
+                    <div class="d-flex gap-4 justify-content-center">
+                        <p class="tetxs">20℃</p>
+                        <p class="c-25">25℃</p>
+                    </div>
+                    <div class="d-flex m-2">
+                        <div class="gap-3 d-flex m-auto">
+                            <img src="/images/varsad.png" width="19px" height="17px">
+                            <p>45Km/h</p>
+                            <img src="/images/varsad (1).png" width="19px" height="17px">
+                            <p>70%</p>
+                        </div>
+                    </div>
+                    <p class="m-auto cloudy">Cloudy</p>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-3 col-12">
+                <div class="card h-110 pt-26 hover_card_1" id="cardss">
+                    <img src="/images/card4.svg" width="111px" height="99px" style="margin: 0 auto;margin-top: 15px;">
+                    <div class="card-body d-flex gap-4 justify-content-center">
+                        <p class="bg-gs">Wed</p>
+                        <p class="bg-gs">8:00PM</p>
+                    </div>
+                    <div class="d-flex gap-4 justify-content-center">
+                        <p class="tetxs">20℃</p>
+                        <p class="c-25">25℃</p>
+                    </div>
+                    <div class="d-flex m-2">
+                        <div class="gap-3 d-flex m-auto">
+                            <img src="/images/varsad.png" width="19px" height="17px">
+                            <p>45Km/h</p>
+                            <img src="/images/varsad (1).png" width="19px" height="17px">
+                            <p>70%</p>
+                        </div>
+                    </div>
+                    <p class="m-auto cloudy">Cloudy</p>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="container recent">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="recent_Word">
+                    <p class="resewe">
+                        Recent
+                        <br>
+                        Search
+                        <br>
+                        Weather
+                    </p>
+                    <p class="loreamip">
+                        Lorem Ipsum Dolor Sit Amet,<br>
+                        Consectetur Adipiscing Elit. Bibendum <br>
+                        Cursus Quis.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex gap-4 mt-30 res-card" style="padding-top: 40px;">
+                <div class="card radius">
+                    <div class="card-body bg-card-2">
+                        <div>
+                            <img src="/images/surya.png" alt  class="surya">
+                            <p class="paris">Paris (Sun)</p>
+                            <p class="twe">20℃</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card radius">
+                    <div class="card-body bg-cards">
+                        <div>
+                            <img src="/images/partly.png" alt="">
+                            <p class="paris">Paris (Sun)</p>
+                            <p class="twe">20℃</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="bg-contaniers">
+            <p class="text-center text-light todays">Today's Weather Details</p>
+            <p class="text-center text-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum cursus quis <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit quis
+            </p>
+            <div class="row sunset-card">
+                <div class="col-md-6 justify-content-center d-grid sunset-card">
+                    <div class="d-flex">
+                        <div class="sunrise" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="suns">Sunrise</p>
+                                <p class="time_am">6:42 Am</p>
+                            </div>
+                        </div>
+                        <div class="sunset" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="suns">Sunset</p>
+                                <p class="time_am">7:10 Pm</p>
+                            </div>
+                        </div>
+                    </div>
+               
+                <div class="col-md-6 d-flex justify-content-center m-auto">
+                    <div class="rain-card2">
+                        <div class="card cardsss rounded-5-1">
+                            <div class="card-body d-flex gap-5 justify-content-center">
+                                <div class="d-flex gap-3">
+                                    <img src="/images/vaesad_2.png" alt="">
+                                    <p class="wind text-light">Wind 3KM/H</p>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <img src="/images/vaesad_2.png" alt="">
+                                    <p class="wind text-light">Wind 3KM/H</p>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex gap-5 justify-content-center">
+                                <div class="d-flex gap-5">
+                                    <img src="/images/suraj_2.png" alt="">
+                                    <p class="wind text-light">Rain 78%</p>
+                                </div>
+                                <div class="d-flex gap-5">
+                                    <img src="/images/suraj_2.png" alt="">
+                                    <p class="wind text-light">Rain 82%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card newsupdate">
+                    <div class="card-body">
+                        <div class="d-flex gap-4">
+                            <p class="tws">20℃</p>
+                            <p class="tws">20℃</p>
+                        </div>
+                        <div class="row layout">
+                            <div class="col-md-2">
+                                <img src="/images/barish.png" alt="">
+                                <p class="text-light">24℃</p>
+                                <p class="text-light">1:00PM</p>
+                                <p class="text-light">Light Rain</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="/images/suryass.png" alt="">
+                                <p class="text-light">24℃</p>
+                                <p class="text-light">1:00PM</p>
+                                <p class="text-light">Light Rain</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="/images/chanda.png" alt="">
+                                <p class="text-light">24℃</p>
+                                <p class="text-light">1:00PM</p>
+                                <p class="text-light">Light Rain</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="/images/badal.png" alt="">
+                                <p class="text-light">24℃</p>
+                                <p class="text-light">1:00PM</p>
+                                <p class="text-light">Light Rain</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="/images/barish (1).png" alt="">
+                                <p class="text-light">24℃</p>
+                                <p class="text-light">1:00PM</p>
+                                <p class="text-light">Light Rain</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 90px;">
+                            <p class="news">News Update</p>
+                            <p class="text-light">
+                                View Tomorrow forecast 
+                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;">
+                                
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <h3 class="wether_news">Weather Forecast News</h3>
+        <p  class="loream_wether">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Bibendum Cursus Quis <br>
+            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Quis</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" style="margin-top: 20px;">
+        <div class="col-md-3">
+            <div class="card he-card">
+                <img src="/images/we_1.png" class="card-img-top p-2"><br>
+                <p class="text-center">19th Jan, 2022</p><br>
+                <p class="text-center texts">
+                    One of the daily rituals I often <br> find myself doing
+                </p><br>
+                <a href="#" class="Read text-center">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card he-card">
+                <img src="/images/we_2.png" class="card-img-top p-2"><br>
+                <p class="text-center">19th Jan, 2022</p><br>
+                <p class="text-center texts">
+                    Some parts of the state saw scant <br> relief, as downtown
+                </p><br>
+                <a href="#" class="Read text-center">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card he-card">
+                <img src="/images/we_3.png" class="card-img-top p-2"><br>
+                <p class="text-center">19th Jan, 2022</p><br>
+                <p class="text-center texts">
+                    Cold weather alert issued as <br> temperatures set to plummet
+                </p><br>
+                <a href="#" class="Read text-center">Read More</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <button class="read_more_btn">Read More</button>
+    <div class="container">
+        <div class="bg-footer">
+            <div class="d-flex weater_footer gap-2">
+                <img src="/images/navbar_weather.png" alt="">
+                <p class="footer_weather_text">Weathercoach</p>
+            </div>
+            <div>
+                
+                <ul class="d-flex justify-content-center footer_navbar">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ClimateChange.html">Climate Change</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="News.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Map.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Gallery.html">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <hr class="hr_row">
+            <div class="row footer_copy">
+                <div class="col-md-8 d-flex justify-content-center">
+                    <p><i class="fa-regular fa-copyright" style="color: #ffffff;"></i></p>
+                    <p class="text-light rights">2022 Weathercoach. All Rights Reserved</p>
+                </div>
+                <div class="col-md-4 d-flex gap-3 justify-content-center iconss">
+                    <!-- icons  -->
+                    <i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-square-instagram fa-2x" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-square-twitter fa-2x" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook fa-2x" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

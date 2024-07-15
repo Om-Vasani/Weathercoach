@@ -1,0 +1,121 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+.bg-img{
+
+    background-image: url('/images/news.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 423px;
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+}
+.around {
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.12px;
+}
+.houres {
+    color: #8E8E8E !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.one{
+
+    font-family: 'montserrat',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.09px;
+    text-align: center;
+
+}
+.read{
+ 
+    font-family: 'montserrat',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1E64F0;
+    text-decoration: none;
+
+}
+.bg-footer {
+    margin-top: 80px;
+    margin-left: -215px;
+    background-color: #000;
+    width: 1513px;
+    height: 334px;
+}
+.weater_footer {
+    justify-content: center;
+    padding-top: 65px;
+}
+.footer_weather_text{
+
+    color: #ffffff;
+    font-family: 'inder',sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 15px;
+
+}
+.footer_navbar {
+
+    list-style: none;
+    padding-top: 30px;
+    column-gap: 20px;
+    
+}
+.footer_navbar .nav-item {
+
+    margin: 0 10px;
+
+}
+  
+.footer_navbar .nav-link {
+
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+}
+.footer_navbar .nav-link:hover {
+
+    color: #ffffff;
+
+} 
+.hr_row{
+
+    color: #ffffff;
+    width: 90%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 5%;
+
+}
+.footer_copy{
+
+    padding-top: 37px;
+
+}
+.rights{
+
+    font-family: 'montserrat',sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.09px;
+    justify-content: start;
+    display: flex;
+
+}
